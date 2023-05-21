@@ -18,7 +18,7 @@ function Home() {
   }, []);
 
   const getTickets = async () => {
-    const response = await axios.get("/tickets");
+    const response = await axios.get("http://localhost:4000/tickets");
     if (response.status === 200) {
       setData(response.data);
     }

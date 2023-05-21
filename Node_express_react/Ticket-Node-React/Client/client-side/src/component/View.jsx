@@ -14,7 +14,7 @@ function View() {
   }, [id]);
 
   const getSingleUser = async (id) => {
-    const response = await axios.get(`/ticket/${id}`);
+    const response = await axios.get(`http://localhost:4000/ticket/${id}`);
     if (response.status === 200) {
       setData({ ...response.data[0] });
     }

@@ -19,9 +19,10 @@ function Update() {
     getTicket(id);
   },[id]);
   const getTicket = async (id) => {
-    const response = await axios.get(`/ticket/${id}`);
+    const response = await axios.get(`http://localhost:4000/ticket/${id}`);
+    console.log(response);
     if (response.status === 200) {
-      setValues({ ...response.data[0]});
+      setValues({ ...response.data});
       console.log(values);
     }
   };
@@ -100,7 +101,7 @@ function Update() {
             <TextField
               type="file"
               variant="outlined"
-              value={values.image}
+              
               // onChange={ handleChange}
 
               //     (event) => {
