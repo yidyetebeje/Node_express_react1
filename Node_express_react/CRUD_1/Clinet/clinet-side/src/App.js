@@ -2,12 +2,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Home from "./pages/Home";
-import AddEdit from "./pages/AddEdit";
-import View from "./pages/View";
+import Home from "./pages/Home/Home";
+import AddEdit from "./pages/Addedit/AddEdit";
+import View from "./pages/View/View";
 import Header from "./component/Header";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
+import Register from "./pages/LoginRegister/Register";
+import Login from "./pages/LoginRegister/Login";
 
 function App() {
   return (

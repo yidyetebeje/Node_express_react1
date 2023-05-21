@@ -14,7 +14,6 @@ function Home() {
     if (response.status === 200) {
       setData(response.data);
     }
-    // fetch("http://localhost:5000/users").then(res=>res.json()).then(data=>setData(data))
   };
   const onDelete = async (id) => {
     if (window.confirm("Are you Sure?")) {
@@ -22,7 +21,7 @@ function Home() {
       if (response.status === 200) {
         toast.success("User Deleted successfully");
         getUsers();
-        setTimeout(() => navigate('/'), 500);
+        setTimeout(() => navigate("/"), 500);
       }
     }
   };
