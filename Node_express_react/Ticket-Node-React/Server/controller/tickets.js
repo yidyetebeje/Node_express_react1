@@ -1,6 +1,16 @@
 import { v4 as uuid } from "uuid";
 
-let tickets = [];
+let tickets = [
+  {
+    id: "1",
+    title: "Rope Climbing",
+    price: "100",
+    description: "Rope Climbing",
+    place: "Kathmandu",
+    image: "https://images.unsplash.com/photo-1611095789909-4b0b2b2b0b0f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cm9wZSUyMGNsaW1iaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    date: "2021-05-01",
+  }
+];
 
 export const getTickets = (req, res) => res.send(tickets);
 
@@ -36,7 +46,7 @@ export const updateTicket = (req, res) => {
 };
 export const getTicket = (req, res) => {
   const id = req.params.id;
-  const ticket = tickets.find((ticket) => ticket.id === id);
+  const ticket = tickets.find((ticket) => ticket.id == id);
   if (ticket) {
     res.send(ticket);
   } else {
