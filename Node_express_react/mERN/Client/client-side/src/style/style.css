@@ -1,0 +1,16 @@
+.link-navigate{
+    text-decoration: none;
+    color: rgb(2, 2, 150);
+    border: 1px solid rgb(23, 23, 184) ;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.link-navigate:hover{
+    background-color: rgb(4, 4, 196);
+    color: white;
+}
+.link-new{
+    text-decoration: none;
+    color: white;
+}

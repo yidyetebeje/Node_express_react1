@@ -15,7 +15,7 @@ export const getUser = (req, res) => {
 };
 
 export const deleteUser = (req, res) => {
-   users = users.filter((user) => user.id !== req.params.id);
+  users = users.filter((user) => user.id !== req.params.id);
   res.send(`User with id: ${req.params.id} has been deleted Succesfully`);
 };
 
